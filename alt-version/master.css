@@ -1,15 +1,23 @@
+body {
+	font-family: 'Mandali', Arial, sans-serif;
+}
+
 /*Contenitori*/
 body>div {
 	background-color: rgb(235, 235, 235);
 	display: inline-block;
-	width:300px;
+	width: 300px;
 	height: 360px;
-	margin-bottom: 15px;
+	margin: 5px;
 	position: relative;
+	/*imposto parametri da transizionare in :hover*/
+	transition-property: background-color;
+  	transition-duration: 0.3s;
+  	transition-timing-function: linear;
 }
 
 .product {
-	width: 270px;
+	width: 260px;
 	position: absolute;
 	margin: auto;
 	top: 0;
@@ -22,7 +30,6 @@ body>div {
 p {
 	background-color: green;
 	padding: 1px;
-	font-family: Arial, sans-serif;
 	position: absolute;
 	right: 0;
 	margin: 0;
@@ -30,6 +37,13 @@ p {
 
 .red {
 	background-color: red;
+}
+
+/* nome prodotto */
+h2 {
+	text-align: center;
+	color: black;
+	margin-top: 15px;
 }
 
 /* cuore */
@@ -47,4 +61,8 @@ p {
 /*Visualizzazione quando passi sopra il container col mouse*/
 body>div:hover>.heart {
 	display: block;
+}
+
+body>div:hover {
+	background-color: grey;
 }
