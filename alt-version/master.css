@@ -1,0 +1,50 @@
+/*Contenitori*/
+body>div {
+	background-color: rgb(235, 235, 235);
+	display: inline-block;
+	width:300px;
+	height: 360px;
+	margin-bottom: 15px;
+	position: relative;
+}
+
+.product {
+	width: 270px;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+/* % sconto in alto a sinistra*/
+p {
+	background-color: green;
+	padding: 1px;
+	font-family: Arial, sans-serif;
+	position: absolute;
+	right: 0;
+	margin: 0;
+}
+
+.red {
+	background-color: red;
+}
+
+/* cuore */
+.heart {
+	height: 30px;
+	position: absolute;
+	margin: auto;
+	top: 300px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	display: none;
+}
+
+/*Visualizzazione quando passi sopra il container col mouse*/
+body>div:hover>.heart {
+	display: block;
+}
